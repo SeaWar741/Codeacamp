@@ -1,0 +1,79 @@
+html {
+  text-align:center;
+}
+
+h1 {
+  color: blue;
+  font-style: italic;
+  font-family: Verdana;
+}
+
+#datos {
+  color: blue;
+}
+
+.parrafo_1{
+  color: red;
+  font-weight:bold;
+}
+
+.parrafo_2{
+  color: yellow;
+  font-family: Verdana;
+}
+
+.parrafo_3{
+  background-color: yellow;
+  color:#4486f7;
+  font-weight: bold;
+}
+
+.tab_1{
+  color: #FFC842;
+  background: black;
+}
+
+.tab_2{
+  color: #FFC842;
+  background: black;
+}
+
+.tab_3{
+  color: #FFC842;
+  background: black;
+}
+
+.tab_4{
+  color: #FFC842;
+  background: black;
+}
+
+.tab_5{
+  color: #FFC842;
+  background: black;
+}
+
+.col_1 {
+  color: white;
+  background-color: black;
+}
+
+.col_2 {
+  color: white;
+  background-color: black;
+}
+
+.col_3 {
+  color: white;
+  background-color: black;
+}
+
+.col_4 {
+  color: white;
+  background-color: black;
+}
+
+.col_5 {
+  color: white;
+  background-color: black;
+}
