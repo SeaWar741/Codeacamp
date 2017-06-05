@@ -1,0 +1,53 @@
+html {
+  background-image: url("http://hdwallpapersbuzz.com/wp-content/uploads/2017/03/david-bowie-wallpaper-images-13-1.jpg");
+  background-color:##D1D2D4;
+  background-attachment: fixed;
+  background-size:     cover;                     
+  background-repeat:   no-repeat;
+  background-position: center center;  
+}
+
+#titulo {
+  color: #F14141;
+  font-family: "Lucida Sans Unicode", Lucida Grande, sans-serif;
+  font-size: 400%;
+  width :200px ;
+}
+
+#subtitulo {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-weight: bold;
+  width: 500px;
+  text-align: right;
+  font-size: 120%;
+  color: #0091B2;
+  background-color: white;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #F14141;
+
+}
+
+#foto {
+  text-align: center;
+}
+
+.titulos {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  color: white;
+}
+
+#footer {
+  text-align: center;
+  color: #24A9E1;
+}
+
+#Pie {
+  text-align: center;
+  color: #F14141;
+  background-color: white ;
+}
+
+#foto {
+  text-align: :center;
+}
