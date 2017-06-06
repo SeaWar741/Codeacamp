@@ -1,0 +1,28 @@
+Programa=conocer los mejores alumnos segun sus calificaciones
+Students= array [name,grade]
+
+metodo best_students (index)
+  best_students=array
+  var1,var2 = 0,0
+
+  while grade<limit
+  current_student = students[y][x]
+
+  IF current_student index1 is equal to max grade THEN
+    insert current student into array
+  END
+
+  IF x is equal to the students grade length minus 1 THEN
+    name is equal to 0
+    grade i equal to grade plus one
+  ELSE
+    name is equal to name plus one
+  END
+
+  END
+  best_students array
+
+  END
+
+  print method best students == [the best students names]
+
