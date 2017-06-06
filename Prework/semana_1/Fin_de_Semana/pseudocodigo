@@ -5,8 +5,8 @@ metodo best_students (index)
   best_students=array
   var1,var2 = 0,0
 
-  while grade<limit
-  current_student = students[y][x]
+  WHILE grade is minor to the limit THEN
+  current_student is inserted into students in the positions[var1][var2]
 
   IF current_student index1 is equal to max grade THEN
     insert current student into array
