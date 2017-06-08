@@ -6,11 +6,13 @@ x = 1.4
 y = "3"
 z = {name: "Javier", email: "mail@codea.mx", fase: 1}
 # Respuesta
-#v= float 
-#w= array
-#x= float
-#y=string
-#z=hash
+
+
+p v.class== Float 
+p w.class== Array
+p x.class== Float
+p y.class== String
+p z.class== Hash
 
 #se puede saber su clase con "variable".class
 
@@ -20,14 +22,16 @@ z = {name: "Javier", email: "mail@codea.mx", fase: 1}
 fruits = ["apple", "orange", "peach", "pineapple", "kiwi"]
 # Respuesta
 p fruits[3]
-fruits.each do |x|
-  if x== "orange"
-    x.replace("banana")
-  end
-  fruits
-end
-p fruits
+# fruits.each do |x|
+#   if x== "orange"
+#     x.replace("banana")
+#   end
+#   fruits
+# end
+# p fruits
 
+fruits[1] = "banana"
+p fruits
 #________________________________________________________________
 # Obtén el último elemento de la lista `sports`.
 sports = ["rugby", "tennis", "soccer", "cycling", "baseball"]

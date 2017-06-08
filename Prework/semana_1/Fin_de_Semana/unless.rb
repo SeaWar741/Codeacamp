@@ -1,8 +1,6 @@
 def swim(time)
-  limit = 10
-  #limite es igual a 10
-  p "#{time} seconds... New Record for 50 meters" unless time > limit
-  #se imprime a no ser que el tiempo sea mayor al limite
+  p "#{time} seconds... New Record for 50 meters" unless time > 10
+  #se imprime a no ser que el tiempo sea mayor al limite de 10
 end
 
 #test
