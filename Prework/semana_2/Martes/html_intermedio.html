@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+	<div id = "divisor">
+	<div id="title">
+  		<h5>Subtítulo</h5>
+  	</div>
+  	<div id="text1">
+  		<p>Este es el primer párrafo de contenido.</p>
+  	</div>
+  	<div id="text2">
+  		<p><strike>Y este es el segundo párrafo de contenido</strike></p>
+  	</div>
+</div>
+
+<p id="form_h"><h1>Wallmart</h1></p>
+<form id="form_test">
+  <fieldset>
+    <legend>Datos del Cliente</legend>
+    <label for="Nombre Completo">
+      Nombre Completo:
+      <input type="text" name="Nombre Completo">
+    </label><br>
+    <label for="RFC">
+      RFC:
+      <input type="text" name="RFC">
+    </label><br>
+    <label for="Direccion">
+      Dirección:
+      <input type="text" name="Direccion">
+    </label><br>
+    <label for="email">
+      Email:
+      <input type="email" name="email">
+    </label><br>
+    <label for="Telefono">
+	   Teléfono:
+	   <input type="tel" name="Telefono">    	
+    </label><br>
+    <label for="Descripcion de la compra">
+    	Descripcion de la Compra:
+    	<br>
+    	<textarea form="form_test" rows="4" cols="50"></textarea>
+    </label><br>
+    <label for="Tipo de pago">
+    	Tipo de Pago:
+    		<br>
+    	  	<input type="checkbox" name="Efectivo" value="Efectivo"> EFECTIVO<br>
+  			<input type="checkbox" name="Paypal" value="Car"> PAYPAL<br>
+  			<input type="checkbox" name="OXXO" value="OXXO"> OXXO<br>
+  			<input type="checkbox" name="Visa" value="Visa"> VISA<br>
+  			<input type="checkbox" name="Mastercard" value="Mastercard"> MASTERCARD<br>
+    </label>
+    <label for="Monto">
+    	Monto: $
+    	<input type="number" step="0.01" name="Monto">
+    </label><br>
+   	<form action="/action_page.php">
+  	<input type="submit">
+  </fieldset>
+</form>
+
+
+<style>
+  #divisor {
+    color: #1f8dd3;
+    border: 3px #FFC948 solid;
+    margin: 5px;
+    padding: 5px;
+    width:450px;
+
+  }
+  #title {
+  	color: red;
+  	font-style: bold;
+  	font-size: 24px;
+  }
+  #text1 {
+  	font-style: italic;
+  	color: #1F8DD3;
+  	font-size: 18px;
+ 	padding-top: 0px;
+  }
+  #tex2 {
+  	font-style: italic;
+  	color: #1F8DD3;
+  	font-size: 18px;
+  }
+
+</style>
+
+</html>
