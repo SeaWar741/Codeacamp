@@ -1,0 +1,1 @@
+SELECT COUNT(orderID) FROM Orders where CustomerID=3;
