@@ -1,7 +1,5 @@
 class Course 
-
-  attr_reader :name, :last_name, :campus
-
+  
   def initialize(name)
     @course_name  = name
     @students   = []

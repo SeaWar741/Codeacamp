@@ -25,10 +25,8 @@
     game = NumberGuessingGame.new
 
 # Pruebas
-def guessing
-    
-
 a = ""
+
 p "Welcome to Guess the Number"
 p "Human VS Machine"
 
@@ -37,10 +35,8 @@ loop do
         p "Write a number between 0 and 9"
         numer = -1
         while numer != @number
-            #mientras que el numero sea diferente de el numero random
-            numer = gets.chomp.to_i   
-            #numer = obtener la entada del usuario         
-            if numer<@number               
+            numer = gets.chomp.to_i            
+            if numer<@number                
                 p "Too low"
             elsif numer>@number                 
                 p "Too high"
@@ -48,23 +44,8 @@ loop do
                 p "You got it!"
                 puts "WOOOOW!! Very Impresive. Want to defeat the machine again? If not write stop otherwise press any key."
                 break
-                #Cuando la condicion se cumple (numero del usuario= numero random) entonces el loop se rompe y reinicia el numero random
             end
         end
         answer = gets.chomp # The Critical Line to break out of the Loop is here:
         break if answer.downcase == "stop"
-        #romper el loop si es igual a stop ya sea en mayusculas o no
     end
-end
-
-p game.guess(5) #== "Too low"
-
-p game.guess(8) #== "Too high"
-
-p game.guess(7) #== "Too high"
-
-p game.guess(6) #== "You got it!"
-
-p game.guess
-
-#Las pruebas no pueden dar verdadero ya que el numero va a cambiar siempre 

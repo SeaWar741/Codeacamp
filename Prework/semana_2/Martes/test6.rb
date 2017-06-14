@@ -11,7 +11,7 @@ def interactive
     p"Welcome to the guessing game!"
     p"Pick any number between 0 and 9:"
     guess = gets.chomp.to_i
-while guess != @number do
+while guess != @number 
         if guess< @number
                 #si el numero es mas pequeño que el numero entonces "Too low"
                 p "Too low"
@@ -22,7 +22,6 @@ while guess != @number do
                 #si el numero es igual al numero random que pone la computadora entonces "you got it!"
                 p "you got it!"
         end
-    end
 end
 end
 
