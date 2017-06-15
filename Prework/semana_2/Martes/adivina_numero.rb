@@ -6,7 +6,7 @@
         #number es igual a un numero random entre 0 y 9
     end
 
-    def guess(numer)
+    def guess(numer=gets.chomp.to_f)
             #metodo guess que dice que hay una condicion dada por el usuario, si no se da entonces se pide que el usuario la escriba manualmente
             if numer<@number
                 #si el numero es mas pequeño que el numero entonces "Too low"
@@ -26,9 +26,8 @@
 
 # Pruebas
 def guessing
-    
-
 a = ""
+p "______________________________"
 p "Welcome to Guess the Number"
 p "Human VS Machine"
 
@@ -66,5 +65,7 @@ p game.guess(7) #== "Too high"
 p game.guess(6) #== "You got it!"
 
 p game.guess
+
+guessing
 
 #Las pruebas no pueden dar verdadero ya que el numero va a cambiar siempre 
