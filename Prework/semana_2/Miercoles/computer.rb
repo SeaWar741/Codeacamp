@@ -1,12 +1,9 @@
 class Computer
-	def initialize(color)
-		@color=color
-	end
-
 	def initialize
 		@mac=mac
 
 	color ="platinum"
+end
 		
 	def say
 		if color == newcolor 
@@ -23,7 +20,7 @@ class Computer
 
 end
 
-mac = Computer.new("platinum")
+mac = Computer.new
 #test
 mac.color = "Platinum"
 p mac.color
