@@ -1,5 +1,6 @@
 class Course 
   attr_accessor :course_name
+    #es accesor ya que lo lee, escribe y lo sobreescribe
   attr_reader :students
   def initialize(name)
     @course_name  = name
@@ -15,6 +16,7 @@ end
 
 class Student
   attr_accessor :name, :last_name, :campus
+  #es accesor ya que lo lee, escribe y lo sobreescribe
   attr_reader :id
   @@id = 0
 
@@ -48,7 +50,7 @@ puts math.respond_to?(:add_student) == true
 puts math.respond_to?(:course_name=) == true
 
 fernando.name = "Not Rodrigo"
-fernando.last_name = "GRRR"
+fernando.last_name = "GRRR"2
 fernando.campus = "Monterrey"
 
 math.course_name = "Mathematics"
