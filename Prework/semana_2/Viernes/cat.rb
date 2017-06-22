@@ -1,7 +1,7 @@
 class Cat
   CAT_YEARS = 7
 
-  attr_accessor :name, :age00000000000
+  attr_accessor :age
 
   def initialize(age)
     @age = age 

@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juan Carlos Garfia's Portfolio</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+		body {
+		  width: 100%;
+		  height: 100%;
+		  font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  color: white;
+		  background-color: black;
+		}
+		html {
+		  width: 100%;
+		  height: 100%;
+		}
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+		  margin: 0 0 35px;
+		  text-transform: uppercase;
+		  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-weight: 700;
+		  letter-spacing: 1px;
+		}
+		li {
+		  margin: 0 0 25px;
+		  font-size: 18px;
+		  line-height: 1.5;
+		}
+		p {
+		  margin: 0 0 25px;
+		  font-size: 18px;
+		  line-height: 1.5;
+		}
+		 {
+		  margin: 0 0 25px;
+		  font-size: 18px;
+		  line-height: 1.5;
+		}
+		@media (min-width: 768px) {
+		  p {
+		    margin: 0 0 35px;
+		    font-size: 20px;
+		    line-height: 1.6;
+		  }
+		}
+		a {
+		  color: black;
+		  -webkit-transition: all 0.2s ease-in-out;
+		  -moz-transition: all 0.2s ease-in-out;
+		  transition: all 0.2s ease-in-out;
+		}
+		a:hover,
+		a:focus {
+		  text-decoration: none;
+		  color: white ;
+		}
+		.light {
+		  font-weight: 400;
+		}
+		.navbar-custom {
+		  margin-bottom: 0;
+		  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		  text-transform: uppercase;
+		  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  background-color: black;
+		}
+		.navbar-custom .navbar-toggle {
+		  color: white;
+		  background-color: rgba(255, 255, 255, 0.2);
+		  font-size: 12px;
+		}
+		.navbar-custom .navbar-toggle:focus,
+		.navbar-custom .navbar-toggle:active {
+		  outline: none;
+		}
+		.navbar-custom .navbar-brand {
+		  font-weight: 700;
+		}
+		.navbar-custom .navbar-brand:focus {
+		  outline: none;
+		}
+		.navbar-custom a {
+		  color: white;
+		}
+		.navbar-custom .nav li a {
+		  -webkit-transition: background 0.3s ease-in-out;
+		  -moz-transition: background 0.3s ease-in-out;
+		  transition: background 0.3s ease-in-out;
+		}
+		.navbar-custom .nav li a:hover {
+		  color: rgba(255, 255, 255, 0.8);
+		  outline: none;
+		  background-color: transparent;
+		}
+		.navbar-custom .nav li a:focus,
+		.navbar-custom .nav li a:active {
+		  outline: none;
+		  background-color: transparent;
+		}
+		.navbar-custom .nav li.active {
+		  outline: none;
+		}
+		.navbar-custom .nav li.active a {
+		  background-color: rgba(255, 255, 255, 0.3);
+		}
+		.navbar-custom .nav li.active a:hover {
+		  color: white;
+		}
+		@media (min-width: 768px) {
+		  .navbar-custom {
+		    padding: 20px 0;
+		    border-bottom: none;
+		    letter-spacing: 1px;
+		    background: transparent;
+		    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+		    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+		    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+		  }
+		  .navbar-custom.top-nav-collapse {
+		    padding: 0;
+		    background: black;
+		    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		  }
+		}
+		.intro {
+		  display: table;
+		  width: 100%;
+		  height: auto;
+		  padding: 100px 0;
+		  text-align: center;
+		  color: white;
+		  background: url(https://i2.wp.com/unbelievablewallpaper.files.wordpress.com/2017/02/wjkc3xzjsxw-geran-de-klerk.jpg?w=780&h=585&crop&ssl=1&zoom=2) no-repeat bottom center scroll;
+		  background-color: black;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  background-size: cover;
+		  -o-background-size: cover;
+		}
+		.intro .intro-body {
+		  display: table-cell;
+		  vertical-align: middle;
+		}
+		.intro .intro-body .brand-heading {
+		  font-size: 40px;
+		}
+		.intro .intro-body .intro-text {
+		  font-size: 18px;
+		}
+		@media (min-width: 768px) {
+		  .intro {
+		    height: 100%;
+		    padding: 0;
+		  }
+		  .intro .intro-body .brand-heading {
+		    font-size: 100px;
+		  }
+		  .intro .intro-body .intro-text {
+		    font-size: 26px;
+		  }
+		}
+		.btn-circle {
+		  width: 70px;
+		  height: 70px;
+		  margin-top: 15px;
+		  padding: 7px 16px;
+		  border: 2px solid white;
+		  border-radius: 100% !important;
+		  font-size: 40px;
+		  color: white;
+		  background: transparent;
+		  -webkit-transition: background 0.3s ease-in-out;
+		  -moz-transition: background 0.3s ease-in-out;
+		  transition: background 0.3s ease-in-out;
+		}
+		.btn-circle:hover,
+		.btn-circle:focus {
+		  outline: none;
+		  color: white;
+		  background: rgba(255, 255, 255, 0.1);
+		}
+		.btn-circle i.animated {
+		  -webkit-transition-property: -webkit-transform;
+		  -webkit-transition-duration: 1s;
+		  -moz-transition-property: -moz-transform;
+		  -moz-transition-duration: 1s;
+		}
+		.btn-circle:hover i.animated {
+		  -webkit-animation-name: pulse;
+		  -moz-animation-name: pulse;
+		  -webkit-animation-duration: 1.5s;
+		  -moz-animation-duration: 1.5s;
+		  -webkit-animation-iteration-count: infinite;
+		  -moz-animation-iteration-count: infinite;
+		  -webkit-animation-timing-function: linear;
+		  -moz-animation-timing-function: linear;
+		}
+		@-webkit-keyframes pulse {
+		  0% {
+		    -webkit-transform: scale(1);
+		    transform: scale(1);
+		  }
+		  50% {
+		    -webkit-transform: scale(1.2);
+		    transform: scale(1.2);
+		  }
+		  100% {
+		    -webkit-transform: scale(1);
+		    transform: scale(1);
+		  }
+		}
+		@-moz-keyframes pulse {
+		  0% {
+		    -moz-transform: scale(1);
+		    transform: scale(1);
+		  }
+		  50% {
+		    -moz-transform: scale(1.2);
+		    transform: scale(1.2);
+		  }
+		  100% {
+		    -moz-transform: scale(1);
+		    transform: scale(1);
+		  }
+		}
+		.content-section {
+		  padding-top: 100px;
+		}
+		.download-section {
+		  width: 100%;
+		  padding: 50px 0;
+		  color: white;
+		  background: url(https://i1.wp.com/unbelievablewallpaper.files.wordpress.com/2017/02/1_quiet.jpg?w=1316&h=&crop&ssl=1&zoom=2) no-repeat center center scroll;
+		  background-color: black;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  background-size: cover;
+		  -o-background-size: cover;
+		}
+		#map {
+		  width: 100%;
+		  height: 200px;
+		  margin-top: 100px;
+		}
+		@media (min-width: 767px) {
+		  .content-section {
+		    padding-top: 250px;
+		  }
+		  .download-section {
+		    padding: 100px 0;
+		  }
+		  #map {
+		    height: 400px;
+		    margin-top: 250px;
+		  }
+		}
+		.btn {
+		  text-transform: uppercase;
+		  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+		  font-weight: 400;
+		  -webkit-transition: all 0.3s ease-in-out;
+		  -moz-transition: all 0.3s ease-in-out;
+		  transition: all 0.3s ease-in-out;
+		  border-radius: 0;
+		}
+		.btn-default {
+		  border: 1px solid #42DCA3;
+		  color: #42DCA3;
+		  background-color: transparent;
+		}
+		.btn-default:hover,
+		.btn-default:focus {
+		  border: 1px solid #42DCA3;
+		  outline: none;
+		  color: black;
+		  background-color: #42DCA3;
+		}
+		ul.banner-social-buttons {
+		  margin-top: 0;
+		}
+		@media (max-width: 1199px) {
+		  ul.banner-social-buttons {
+		    margin-top: 15px;
+		  }
+		}
+		@media (max-width: 767px) {
+		  ul.banner-social-buttons li {
+		    display: block;
+		    margin-bottom: 20px;
+		    padding: 0;
+		  }
+		  ul.banner-social-buttons li:last-child {
+		    margin-bottom: 0;
+		  }
+		}
+		footer {
+		  padding: 50px 0;
+		}
+		footer p {
+		  margin: 0;
+		}
+		::-moz-selection {
+		  text-shadow: none;
+		  background: #fcfcfc;
+		  background: rgba(255, 255, 255, 0.2);
+		}
+		::selection {
+		  text-shadow: none;
+		  background: #fcfcfc;
+		  background: rgba(255, 255, 255, 0.2);
+		}
+		img::selection {
+		  background: transparent;
+		}
+		img::-moz-selection {
+		  background: transparent;
+		  padding: 0px;
+		}
+		body {
+		  webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+		}
+		.logo {
+		padding-top: 2px;
+		}
+		.black-background {background-color:#000000;}
+		.white {color:#ffffff;}
+		.blue {background-color:#4267B2;}
+		#contact {
+		  width: 100%;
+		  padding: 50px 0;
+		  color: white;
+		  background: url(https://i2.wp.com/unbelievablewallpaper.files.wordpress.com/2017/02/w0zynyihhdc-oswaldo-martinez.jpg?w=1250&h=&crop&ssl=1) no-repeat center center scroll;
+		  background-color: black;
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  background-size: cover;
+		  -o-background-size: cover;
+		}
+		}
+		#footers{
+			background-color: black
+		}
+
+</style>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <i><img class="logo" src="http://i.imgur.com/ZjuYhKS.png" height="150" width="150"/></a></i> 
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#download">Projects</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+
+    </nav>
+	<!-- Intro Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h6 class="brand-heading">Juan Carlos Garfias Tovar</h6>
+                        <p class="intro-text">Graphic Designer, 3D Modeler, FilmMaker
+                            <br>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+       <!-- About Section -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>About Juan Carlos Garfias</h2>
+                <h3>"It's the execution that matters, never the idea"</h3>
+                <h4>Casey Neistat</h4>
+                <p>I’m a 17yr old guy who loves computers and graphic design. I’ve been working with PC’s since I was a child. I’ve always felt passion towards learning new things and decided to learn and understand more than the average people do about computers. I began coding in 2017 at Codeacamp with Ruby on Rails. Currently    I'm starting with Java and C++. </p>
+                <p>Right now, I’m in high school at <strong>Tecnológico de Monterrey</strong> in the International Baccalaureate program. I’m looking forward to study Computer science or Computer engineering. </p>
+                <p>I’ve participated in several student groups such as <strong>Taman Keet 3933</strong> where I worked in the programming department (Robotics Representative Team of Tecnológico de Monterrey, Campus Santa Fe), Activatec (Events Organization Group at of Tecnológico de Monterrey, Campus Santa Fe) as the group president and in the Audiovisual Production group of Tecnológico de Monterrey, Campus Santa Fe.</p>
+                <p>Regarding graphic design; I’ve worked with the adobe suite since 2007. I have experience in all the programs, working in projects with companies such as <strong>JJ Eventos Especiales</strong>. I’ve also taken diplomas in 3D modeling at <strong>Escena</strong> learning Zbrush and Maya.</p>
+                <p>I have experience with video editing and filming thanks to my participation in short film productions with groups such as <strong>La Matatena. A.C</strong> where the films “Mini historias de animales con humanos” and “Pavex quiere ir a la universidad” were sent to film festivals through the world. </p>
+                <p>My main interests are Web, Software and Graphic Design, Video Production and Cyber Security.</p>
+                <p>My mother tongue is Spanish but I’ve also know English since I’ve been studying it since I was a baby, right now I have the B2 level and I’m taking the advanced English program of the International Baccalaureate. I also speak French and currently have the A2 level. I’m starting to learn mandarin Chinese and hope to take a certification soon. </p>
+                <p><strong> Programs I use</strong></p>
+							<li>Adobe After Effects</li>
+							<li>Adobe Premiere</li>
+							<li>Adobe Dreamweaver</li>
+							<li>Adobe Audition</li>
+							<li>Adobe Photoshop</li>
+							<li>Adobe Illustrator</li>
+							<li>Adobe Lightroom</li>
+							<li>Maya</li>
+							<li>ZBrush</li>
+							<li>Sublime Text</li>
+							<li>Atom</li>
+							<li>Notepad++</li>
+							<li>NeatBeans IDE 8.2</li>
+							<li>DB Browser for SQLite</li>
+							<li>Bash for Windows (I know it’s kind of lame but I like the Windows 10 Environment but I can work with Linux if necessary 😊) </li>
+            </div>
+        </div>
+    </section>
+        <!-- Project Section -->
+    <section id="download" class="content-section text-center">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>Unbelievable Wallpapers</h2>
+                    <p>Welcome to the most amazing page for wallpapers, here you can find thousands of images for free and upload your wallpaper for the world to see your art. Share, find and personalize your computer, laptop or tablet thanks to the high resolution images.</p>
+                    <a href="https://unbelievablewallpaper.wordpress.com/" class="btn btn-default btn-lg">Visit Unbelievable Page</a>
+                    	<br>
+                    	<br>
+                    	<br>
+                    <h2>SeaWar741</h2>
+                    <p>The Official gaming channel from SeaWar, a youtuber that will make you laugh. Minecraft, COD, Farcry, Vlogs and more!</p>
+                    <a href="https://www.youtube.com/user/SeaWar741" class="btn btn-default btn-lg">Visit SeaWar's Channel</a>
+                    	<br>
+                    	<br>
+                    	<br>
+                    	<br>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1>Contact Me</h1>
+                <p>Feel free to email me about anything</p>
+                <br>
+                <h2><a href="mailto:juanca741@gmail.com">juanca741@gmail.com</h2>
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+						<a href="https://github.com/SeaWar741" class="btn btn-primary black-background black"><i class="fa fa-github">Github</i></a>
+						<a href="https://plus.google.com/u/0/+JuanCarlosGarfiasTovar" class="btn btn-danger btn-fab"><i class="fa fa-google-plus">Plus</i></a>
+						<a href="https://www.facebook.com/JuanCaGarfias" class="btn btn-primary black-background blue"><i class="fa fa-facebook-square"> acebook</i></a>
+						<a href="https://twitter.com/JuancaGarfias?lang=es" class="btn btn-info btn-fab"><i class="fa fa-twitter">Twitter</i></a>
+                </ul>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            	<br>
+            </div>
+	<!--Footer-->
+    <section id="footers" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+ 					<h5 class="copyright">Juan Carlos Garfias Tovar © SeaWar741. 2017 • All rights reserved.</h5>
+            </div>
+</body>
+</html>
