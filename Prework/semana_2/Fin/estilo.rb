@@ -1,16 +1,12 @@
 class PERSON
-    LIFE_stage = {childhood:12,teenager:19,adult:50}
-    LEGAL_AGE = 18
-    attr_reader :name
-    attr_writer :name
+ LIFE_stage = {childhood:12,teenager:19,adult:50}
+ LEGAL_AGE = 18
+ attr_reader :name,:age
+ attr_writer :name
 
-    def initialize(name,age)
+ def initialize(name,age)
      @name = name
      @age = age
- end
-
- def age
-     @age
  end
 
  def life_stage
