@@ -6,11 +6,11 @@ class Person
 	end
 
 def age
-	calculation
+	years_old
 end
 
 private
-def calculation
+def years_old
 	  current_year = Time.new.year
   	  age = current_year -= @date
   	  "#{@names} is #{age} years old."
