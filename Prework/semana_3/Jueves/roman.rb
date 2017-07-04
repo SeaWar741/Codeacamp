@@ -19,7 +19,7 @@ def to_roman(number)
   roman = ""
 
   VALUES.each do |pair|
-    #cada valor se vuelve la variable par
+    #cada valor se vuelve la variable parn
     letter = pair[0]
     #la variable letra es igual a par en el indice 0
     value = pair[1]
