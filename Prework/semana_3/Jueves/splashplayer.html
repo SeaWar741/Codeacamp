@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
+</head>
+<style>
+@import"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css";
+@import"https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700";
+body{font-family:'Open Sans Condensed',sans-serif;font-size:18px}
+.backto{background:#039; padding:12px 0; color:#fff}
+.backto a{color:#FFF; text-decoration:none}
+.cards-row{padding-top:40px; padding-bottom:20px; background:#eee}
+.thumbnail{padding:0; border-radius:0; border:none; box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12)}
+.thumbnail>img{width:100%; display:block}
+.thumbnail h3{font-size:26px}
+.thumbnail h3,.card-description{margin:0; padding:8px 0; border-bottom:solid 1px #eee; text-align:justify}
+.thumbnail p{padding-top:8px; font-size:20px}
+.thumbnail .btn{border-radius:0; box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12); font-size:20px}
+	body {
+		background-color: #132636;
+		/*background-image: url("http://www.camionetica.com/wp-content/uploads/2013/08/VertigoGrphx-5.jpg");*/
+	}
+
+	.navbar {
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;
+	}
+	.navbar .container {
+		text-align: center;
+	}
+	.navbar-collapse .navbar-brand {
+		text-align: bottom;
+		display: inline-block;
+		float: none;
+		padding: 0;
+		margin: 0 !important;
+		overflow: visible;
+	}
+	.navbar-collapse .navbar-brand .white-circle {
+		display: block;
+		width: 161px;
+		height: 161px;
+		background-color: white;
+		border-radius: 50%;
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.19);
+		text-align: center;  
+		position: relative;
+
+	}
+	.navbar-collapse .navbar-brand .white-circle .logo {
+		width: 300px;
+		position: absolute;
+		text-align: center;
+		margin-left:-149px;
+	}
+
+	.slidertext h3 {
+		color: #fff;
+		font-size: 72px;
+		line-height: 70px;
+		margin: 0 auto 15px;
+		text-shadow: 0 3px 7px rgba(0,0,0,0.35);
+		font-weight: 600;
+		letter-spacing: 50;
+		font-feature-settings: "liga" off;
+		z-index: 8 !important;
+		position: absolute;
+	}
+
+	.hero-hw-video {
+		/*height: 500px;*/
+		text-align: center;
+		overflow: hidden;
+		/*¨width: 100%;*/
+		position: relative;
+		z-index: -1 !important;
+		margin:0 0 0 0 ;
+	}
+
+	.container {
+		width: 100%;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-perspective: 1000;
+		perspective: 1000;
+		position: relative;
+	}
+
+	.jumbotron {
+		position: relative;
+		background-color: #132636;
+		z-index: -1;
+		margin-right: 10px;
+	}
+
+	.map {
+		width: 200px;
+		height: 300px;
+		margin: 0 -15px;
+		position: relative;
+		box-shadow: 0px 0px 110px -5px rgba(0, 0, 0, 0.5);
+		background-size: cover;
+		background-position: center;
+		border-radius: 5px;
+		-webkit-transition: .2s;
+		transition: .2s;
+		cursor: pointer;
+	}
+	.map:hover {
+		-webkit-transition: .2s;
+		transition: .2s;
+		-webkit-transform: translateZ(5px) translateY(-20px) scale(1.05);
+		transform: translateZ(5px) translateY(-20px) scale(1.05);
+	}
+
+	.map-1,
+	.map-4 {
+		-webkit-transform: translateZ(1px);
+		transform: translateZ(1px);
+	}
+
+	.map-2,
+	.map-5 {
+		-webkit-transform: translateZ(2px) translateY(-5px);
+		transform: translateZ(2px) translateY(-5px);
+	}
+
+	.map-3 {
+		-webkit-transform: translateZ(3px) translateY(-10px);
+		transform: translateZ(3px) translateY(-10px);
+	}
+
+	.map-1:hover ~ .map-2 {
+		-webkit-transform: translateZ(4px) translateY(-15px);
+		transform: translateZ(4px) translateY(-15px);
+		-webkit-transition: .2s;
+		transition: .2s;
+	}
+
+	.map-4 {
+		-webkit-box-ordinal-group: 6;
+		-ms-flex-order: 5;
+		order: 5;
+	}
+	.map-4:hover ~ .map-5 {
+		-webkit-transform: translateZ(3px) translateY(-15px);
+		transform: translateZ(3px) translateY(-15px);
+		-webkit-transition: .1s;
+		transition: .1s;
+	}
+
+	.shelf {
+		background: #132636;
+		height: 100px;
+		width: 100%;
+		position: absolute;
+		bottom: -75px;
+		left: -50;
+		-webkit-transform: translateZ(10px);
+		transform: translateZ(10px);
+	}
+	#first-text{
+		color: white;
+		text-align: center;
+		font-family: 'Raleway', sans-serif;
+	}
+	#about-us {
+		background-image: url("http://www.camionetica.com/wp-content/uploads/2013/08/VertigoGrphx-5.jpg");
+	}
+	#info {
+		background-color: white;
+	}
+	#us{
+		background-color: white;
+	}
+	.card {
+  box-shadow: 0rem .5rem 1rem rgba(0,0,0,.3);
+  background-color: #fff;
+
+  border-radius: 0.3rem;
+  transition: all .2s ease-in-out;
+    transform: scale(0.95);
+        text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 1rem 2rem rgba(0,0,0,0.2);
+  transform: scale(1);
+  cursor: pointer;
+      text-align: center;
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  background-color: goldenrod;
+  padding: .5rem 0;
+  border-radius: 0.3rem 0.3rem 0 0;
+      text-align: center;
+}
+
+.pic {
+  max-width: 100%;
+}
+
+.content {
+    padding: .5rem;
+    text-align: center;
+    margin: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.small {
+  max-width: 150rem;
+  text-align: center;
+}
+
+#media{
+	background-image: url("http://www.camionetica.com/wp-content/uploads/2013/08/VertigoGrphx-5.jpg");
+}
+
+#images{
+	width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+</style>
+
+<body>
+	<nav class="navbar navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<a class="navbar-brand visible-xs" href="index.php">Logo</a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="index.php">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#about-us">About Us</a></li>
+					<li><a href="#media">Media</a></li>
+					<li><a href="events.php">Events</a></li>
+				</ul>
+				<div class="navbar-brand hidden-xs">
+					<a class="white-circle" href="index.php">
+						<img class="logo" src="http://i.imgur.com/jKxlhoo.png">
+					</a>
+				</div>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="things-to-do.php">Things To Do</a></li>
+					<li><a href="offers.php">Offers</a></li>
+					<li><a href="index.php#location">Location</a></li>
+					<li><a href="book-now.php">Book Now</a></li>
+				</ul>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+</nav>
+
+<div class ="jumbotron">
+	<div class='container'>
+		<div class='map map-1' style="background-image:url('https://www.teachermagazine.com.au/files/Computing%2C_programming_and_coding_in_schools.jpg')"></div>
+		<div class='map map-2' style="background-image:url('http://pocketdesign.com.au/2015/wp-content/uploads/2015/06/Pocket_Tools_Title_Flatlay2.jpg')"></div>
+		<div class='map map-3' style="background-image:url('https://image.freepik.com/free-vector/graphic-designer-workplace_23-2147517292.jpg')"></div>
+		<div class='map map-4' style="background-image:url('https://nerdtechy.com/wp-content/uploads/2016/10/Wacom-Intuos-3D-1.jpg')"></div>
+		<div class='map map-5' style="background-image:url('https://s3.amazonaws.com/pbblogassets/uploads/2015/10/Professional-Video-Editing-Tips-and-Tricks.jpg')">
+		</div>
+		<div class='shelf'>
+			<p><h1 id="first-text"><strong>We are looking for you!</strong></h1></p>
+		</div>
+	</div>
+</div>
+<div class="container" id="about-us">
+<div class="row">
+				<br>
+				<br>
+  <div class="small card">
+  <header class="title"><h2>while (!(succeed = try()));</h2></header>
+  <br>
+  <img id="images" src="https://assets.rocketstock.com/uploads/Video_Editing.jpg" alt="Mountain View" style="width:304px;height:228px;">
+  <div class="content">
+    <strong>
+    <br>
+    <br>
+    	<p>Splashplayer began in 2010 founded by <strong>Juan Carlos Garfias</strong> and <strong>Santiago Alvarado</strong> as a gaming blog. In 2012 
+        it became a gaming community with services such as Minecraft servers, wikis, online games, a virtual market and social platform for gamers to share their ideas. In 2017 it changed its path and changed to become a </p>
+        <br>
+        <p>In splashplayer developers and designers are encouraged to succeed, to achieve their goals through <strong>hard work</strong> and <strong>big ideas</strong>.Working at splashplayer will allow you to achieve bigger objectives through team work, creativity and a healthy enviroment.</p>
+        </strong>
+    <div class="col-md-12" id="us">
+        <br>
+        <br>
+  </div>
+</div>
+<br>
+<br>
+    </div>
+</div>
+</div>
+
+
+<div class="container" id="media">
+	<div class="small card">
+		<header class="title"><h1>Media<h1></header>
+		<div class="content">
+			<strong>See the incredible facilities!</strong>
+			<div class="media-body">
+<div class="container-fluid cards-row">
+<div class="container">
+<div class="row">
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src=https://c.o0bg.com/rf/image_960w/Boston/2011-2020/2014/01/27/BostonGlobe.com/Lifestyle/Images/Boghosian_29googlepix16_LIFE.jpg>
+      <div class="caption">
+        <h3>5 Stars Cafeteria</h3>
+        <p class="card-description"><strong>Eat</strong> like never before, with friends and co-workers. Here the food is prepared by a <strong>international chef</strong>. We just want you to make you happy and to eat deliciously</p>
+        <p><a href="#" class="btn btn-primary" role="button">Virtual cafeteria Tour</a></p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://abduzeedo.com/sites/default/files/originals/1/12_15.jpg" alt="Bootstrap Thumbnail Customization">
+      <div class="caption">
+        <h3>Bootstrap Cards Design</h3>
+        <p class="card-description"><strong>Bootstrap Thumbnail</strong> Customization Example. Here are customized <strong>bootstrap cards</strong>. We just apply some box shadow and remove border radius.</p>
+        <p><a href="#" class="btn btn-primary" role="button">Button</a></p>
+      </div>
+    </div>
+  </div>
+  
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://blog.jelanieshop.com/wp-content/uploads/2013/07/STUDIOMATES-Collaborative-workspace-15.jpg" alt="Bootstrap Thumbnail Customization">
+      <div class="caption">
+        <h3>Work hard the way you like!</h3>
+        <p class="card-description"><strong>Work</strong> the way you feel comfortable, feel free to sleep while in work as long as you deliver<strong>more awesome ideas</strong>. We are happy to help you feel the office even better than your home.</p>
+        <p><a href="#" class="btn btn-primary" role="button">See the various office options</a></p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	</body>
+	</html>

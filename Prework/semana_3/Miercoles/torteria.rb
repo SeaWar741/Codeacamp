@@ -86,11 +86,11 @@ class Sub
 	end
 
 	def size
-		if @size.to_i >= 40 || @size.to_i < 61
+		if @size.to_i >= 40 && @size.to_i <= 61
 		"Jumbo"
-		elsif @size.to_i > 30 || @size.to_i < 40
+		elsif @size.to_i >= 30 && @size.to_i <= 40
 		"Big"
-		elsif @size.to_i < 30 || @size.to_i > 20
+		elsif @size.to_i <= 30 && @size.to_i >= 20
 		"Medium"
 		elsif @size.to_i <=20
 		"Small"
