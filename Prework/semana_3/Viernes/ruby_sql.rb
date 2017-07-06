@@ -1,6 +1,16 @@
 require 'sqlite3'
 
 class Chef
+def initialize (id,first_name,last_name,birthday,email,phone,created_at,updated_at)
+  @id = id
+  @first_name = first_name
+  @last_name = last_name
+  @birthday = birthday
+  @email = email
+  @phone = phone
+  @created_at = created_at
+  @updated_at = updated_at
+end
   def self.create_table
     Chef.db.execute(
       <<-SQL
@@ -35,6 +45,50 @@ class Chef
     )
   end
 
+def self.table
+   Chef.db.execute(
+      <<-SQL
+
+    Select * From chefs;
+          SQL
+    )
+end
+
+def self.all
+   Chef.db.execute(
+      <<-SQL
+
+    Select * From chefs;
+          SQL
+    )
+end
+
+def self.where('first_name','fer')
+   Chef.db.execute(
+      <<-SQL
+
+    SELECT * FROM chefs WHERE first_name = 'fer' OR SELECT * FROM chefs WHERE first_name = ?, 'fer' 
+          SQL
+    )
+end
+
+def self.where('id',10)
+   Chef.db.execute('first_name','fer')(
+      <<-SQL
+
+SELECT * FROM chefs WHERE id = 10 OR SELECT * FROM chefs WHERE id = ?, 10
+          SQL
+    )
+end
+
+def self.chef=Chef.new(data)chef.save
+   Chef.db.execute(
+      <<-SQL
+
+      INSERT INTO chefs (field1, field2, ...) VALUES(value1, value2, ...)
+          SQL
+    )
+end
 
   private
 
@@ -43,3 +97,8 @@ class Chef
   end
 
 end
+
+
+Chef.create_table
+Chef.seed
+
