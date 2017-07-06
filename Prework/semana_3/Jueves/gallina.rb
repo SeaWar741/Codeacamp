@@ -11,7 +11,7 @@ attr_accessor :age, :eggs
 
   # Ages the hen one month, and lays 4 eggs if the hen is older than 3 months
   def age!
-    @eggs = 4 if @age > 3
+    @eggs += 4 if @age > 3
     @age +=1
   end
 
@@ -23,12 +23,10 @@ attr_accessor :age, :eggs
   # Returns an Egg if there are any
   # Raises a NoEggsError otherwise
   def pick_an_egg!
-     
      raise NoEggsError, "The hen has not layed any eggs" unless self.any_eggs?
     # egg-picking logic goes here
     @eggs -=1
       return Egg.new
-
   end
 
   # Returns +true+ if the hen can't laid eggs anymore because of its age, +false+ otherwise.
@@ -38,7 +36,7 @@ attr_accessor :age, :eggs
   end
 
   def increase_hatched_hour(hours)
-    @@hatched_hours += hours
+    @@hatched_hours = hours
   end
 
 end
