@@ -1,15 +1,18 @@
 require 'sqlite3'
 
 class Chef
-def initialize (id,first_name,last_name,birthday,email,phone,created_at,updated_at)
+def initialize (id,first_name,last_name,birthday,email,phone)
   @id = id
   @first_name = first_name
   @last_name = last_name
   @birthday = birthday
   @email = email
   @phone = phone
-  @created_at = created_at
-  @updated_at = updated_at
+    Chef.db.execute("
+      INSERT INTO chefs
+        (first_name, last_name, birthday, email, phone, created_at, updated_at)
+        VALUES
+        ('#{@first_name}', '#{@last_name}', '#{@birthday}', '#{@email}', '#{@phone}', DATETIME('now'), DATETIME('now'))")
 end
   def self.create_table
     Chef.db.execute(
@@ -63,32 +66,46 @@ def self.all
     )
 end
 
-def self.where('first_name','fer')
+def self.where(condition,value)
    Chef.db.execute(
       <<-SQL
 
-    SELECT * FROM chefs WHERE first_name = 'fer' OR SELECT * FROM chefs WHERE first_name = ?, 'fer' 
+    SELECT * FROM chefs WHERE "#{condition} = #{value}";
           SQL
     )
 end
 
-def self.where('id',10)
-   Chef.db.execute('first_name','fer')(
-      <<-SQL
-
-SELECT * FROM chefs WHERE id = 10 OR SELECT * FROM chefs WHERE id = ?, 10
-          SQL
-    )
-end
-
-def self.chef=Chef.new(data)chef.save
+def self.where(id,number)
    Chef.db.execute(
       <<-SQL
 
-      INSERT INTO chefs (field1, field2, ...) VALUES(value1, value2, ...)
+SELECT * FROM chefs WHERE "#{id} = #{number}"
           SQL
     )
 end
+
+def self.delete(value)
+    Chef.db.execute (
+      <<-SQL
+      DELETE FROM chefs WHERE "#{id} = #{value}"
+        SQL
+    )
+  end
+
+# def self.INSERT(value)
+#     Chef.db.execute (
+#       <<-SQL
+#       INSERT INTO chefs ("#{field1},#{field2},#{field3}")
+#       )
+# end
+# def self.chef =Chef.new(data)chef.save
+#    Chef.db.execute(
+#       <<-SQL
+
+#       INSERT INTO chefs (field1, field2, ...) VALUES(value1, value2, ...)
+#           SQL
+#     )
+# end
 
   private
 
@@ -101,4 +118,5 @@ end
 
 Chef.create_table
 Chef.seed
+Chef.table
 
