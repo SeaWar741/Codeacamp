@@ -1,0 +1,99 @@
+<html>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<head>
+	<script language='javascript'>
+		function suma(){
+			var arr = document.getElementsByName('num');
+			var tot=0;
+			for(var i=0;i<arr.length;i++){
+				if(parseInt(arr[i].value))
+					tot += parseInt(arr[i].value);
+			}
+			document.getElementById('resul').value = tot;
+		}
+
+	</script>
+
+	<style type="text/css">
+		body {
+
+		}
+		.boxy {
+			border-radius: 5px;
+			background: white;
+			padding: 20px; 
+			width: 250px;
+			height: 40px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+			position:relative;
+		}
+		.texty {
+			color: white;
+			float: left;
+			margin-left: 110;
+		}
+		.summy {
+			color:white;
+			border-radius: 10px;
+			background: #5BC0DE;
+			width: 150px;
+			height: 40px;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			text-align: center;
+			position: relative;
+		}
+		.panel-default {
+			text-align: center;
+			margin-top: 50px;
+			margin-left:600px;
+			margin-right:600px;
+			height: 600px;
+			background-color: #6B6B6B;
+			border-radius: 10px;
+		}
+		#headering {
+			color: #FEF07D;
+		}
+		#headering2 {
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="panel panel-default">
+		<br>
+		<br>
+		<h1 id="headering">{ Codea<span id="headering2">Camp</span> }</h1>
+		<br>
+		<form name=formulario method=POST>
+		<label class="texty" name= lblnum1>Numero 1:</label>
+			<br>
+			<br>
+			<input class="boxy" type="text" name='num' id="num1"/>
+			<br>
+			<br>
+			<label class="texty" name=lblnum2>Numero 2:</label>
+			<br>
+			<br>
+			<input class="boxy" type="text" name='num' id="num2"/>
+			<br>
+			<br>
+			<br>
+			<input class="summy" type=button value="   +   " onclick="suma()"/>
+			<br>
+			<br>
+			<br>
+			<input class="boxy" type="text" name='resul' id="resul"/>
+		</form>
+	</div>
+</body>
+</html>
