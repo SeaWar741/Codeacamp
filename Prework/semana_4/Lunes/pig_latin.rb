@@ -56,6 +56,7 @@ end
 result.join(' ')
 end
 
+
 #tests
 puts translate('apple')                # "appleay"
 puts translate("quiet")                # "ietquay"
