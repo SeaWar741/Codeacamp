@@ -38,6 +38,13 @@ module MiniActiveRecord
     def self.connected?
       !self.connection.nil?
     end
+#metodos insertados de otros archivos (meals & chefs)
+    def self.create(attributes)
+      record = self.new(attributes)
+      record.save
+
+      record
+    end
 
     def self.attribute_names
       @attribute_names

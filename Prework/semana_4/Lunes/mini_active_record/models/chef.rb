@@ -5,12 +5,6 @@ class Chef < MiniActiveRecord::Model
     end
   end
 
-  def self.create(attributes)
-    record = self.new(attributes)
-    record.save
-
-    record
-  end
 
   def self.where(query, *args)
     MiniActiveRecord::Model.execute("SELECT * FROM chefs WHERE #{query}", *args).map do |row|
