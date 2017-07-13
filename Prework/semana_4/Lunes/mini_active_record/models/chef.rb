@@ -5,15 +5,10 @@ class Chef < MiniActiveRecord::Model
     end
   end
 
-
   def self.where(query, *args)
     MiniActiveRecord::Model.execute("SELECT * FROM chefs WHERE #{query}", *args).map do |row|
       Chef.new(row)
     end
-  end
-
-  def self.find(pk)
-    self.where('id = ?', pk).first
   end
 
   self.attribute_names = [:id, :first_name, :last_name, :email, :phone,
@@ -48,26 +43,7 @@ class Chef < MiniActiveRecord::Model
 
     results
   end
-
-  # We say a record is "new" if it doesn't have a defined primary key in its
-  # attributes
-  def new_record?
-    self[:id].nil?
-  end
-
-  # e.g., chef[:first_name] #=> 'Steve'
-  def [](attribute)
-    raise_error_if_invalid_attribute!(attribute)
-
-    @attributes[attribute]
-  end
-
-  # e.g., chef[:first_name] = 'Steve'
-  def []=(attribute, value)
-    raise_error_if_invalid_attribute!(attribute)
-
-    @attributes[attribute] = value
-  end
+#________________________________________________________
 
   def meals
     Meal.where('chef_id = ?', self[:id])
@@ -80,7 +56,7 @@ class Chef < MiniActiveRecord::Model
 
     meals
   end
-
+#_________________________________________________________
 
   private
 

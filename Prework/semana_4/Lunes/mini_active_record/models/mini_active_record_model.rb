@@ -46,6 +46,30 @@ module MiniActiveRecord
       record
     end
 
+  def self.find(pk)
+    self.where('id = ?', pk).first
+  end
+
+  # e.g., chef[:first_name] #=> 'Steve'
+  def [](attribute)
+    raise_error_if_invalid_attribute!(attribute)
+
+    @attributes[attribute]
+  end
+
+  # e.g., chef[:first_name] = 'Steve'
+  def []=(attribute, value)
+    raise_error_if_invalid_attribute!(attribute)
+
+    @attributes[attribute] = value
+  end
+
+  
+  def new_record?
+    self[:id].nil?
+  end
+
+
     def self.attribute_names
       @attribute_names
     end
