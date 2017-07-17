@@ -1,26 +1,15 @@
 class Meal < MiniActiveRecord::Model
-  # def self.all
-  #   MiniActiveRecord::Model.execute("SELECT * FROM meals").map do |row|
-  #     Meal.new(row)
-  #   end
-  # end
+  def self.all
+    MiniActiveRecord::Model.execute("SELECT * FROM meals").map do |row|
+      Meal.new(row)
+    end
+  end
 
-  # def self.create(attributes)
-  #   record = self.new(attributes)
-  #   record.save
-
-  #   record
-  # end
-
-  # def self.where(query, *args)
-  #   MiniActiveRecord::Model.execute("SELECT * FROM meals WHERE #{query}", *args).map do |row|
-  #     Meal.new(row)
-  #   end
-  # end
-
-  # def self.find(pk)
-  #   self.where('id = ?', pk).first
-  # end
+  def self.where(query, *args)
+    MiniActiveRecord::Model.execute("SELECT * FROM meals WHERE #{query}", *args).map do |row|
+      Meal.new(row)
+    end
+  end
 
   self.attribute_names = [:id, :name, :chef_id, :created_at, :updated_at]
 
@@ -40,18 +29,6 @@ class Meal < MiniActiveRecord::Model
     @old_attributes = @attributes.dup
   end
 
-  # def [](attribute)
-  #   raise_error_if_invalid_attribute!(attribute)
-
-  #   @attributes[attribute]
-  # end
-
-  # def []=(attribute, value)
-  #   raise_error_if_invalid_attribute!(attribute)
-
-  #   @attributes[attribute] = value
-  # end
-  #__________________________________________
   def chef
     Chef.where('id = ?', self[:chef_id])
   end
@@ -62,7 +39,6 @@ class Meal < MiniActiveRecord::Model
 
     chef
   end
-  #__________________________________________
 
   # def new_record?
   #   self[:id].nil?

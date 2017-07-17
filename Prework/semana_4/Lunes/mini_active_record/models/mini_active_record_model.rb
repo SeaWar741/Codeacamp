@@ -2,9 +2,21 @@ module MiniActiveRecord
   class InvalidAttributeError < StandardError; end
   class NotConnectedError < StandardError; end
 
+  
   class Model
+#_____________________________________insert4________________________________________
 
-    #Insert_1
+#______________________________________insert4_______________________________________
+
+#______________________________________insert2______________________________________
+  def self.all
+    MiniActiveRecord::Model.execute("SELECT * FROM #{self}s").map do |row|
+      self.new(row)
+    end
+  end
+#______________________________________insert2______________________________________
+
+#______________________________________Insert_1______________________________________
 
   def self.create(attributes)
     record = self.new(attributes)
@@ -14,15 +26,15 @@ module MiniActiveRecord
   end
 
   def self.where(query, *args)
-    MiniActiveRecord::Model.execute("SELECT * FROM chefs WHERE #{query}", *args).map do |row|
-      Chef.new(row)
+    MiniActiveRecord::Model.execute("SELECT * FROM #{self}s WHERE #{query}", *args).map do |row|
+      self.new(row)
     end
   end
 
   def self.find(pk)
     self.where('id = ?', pk).first
   end
-  
+
   def save
     if new_record?
       results = insert!
@@ -72,7 +84,7 @@ module MiniActiveRecord
     @attributes[attribute] = value
   end
 
-    #insert_1************************
+#______________________________________insert_1______________________________________
     def self.inherited(klass)
     end
 
@@ -141,9 +153,9 @@ module MiniActiveRecord
       attribute_str = self.attributes.map { |key, val| "#{key}: #{val.inspect}" }.join(', ')
       "#<#{self.class} #{attribute_str}>"
     end
+#_______________________________insert3
 
-
-    private
+#_______________________________insert3
 
     def self.prepare_value(value)
       case value

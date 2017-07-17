@@ -1,26 +1,26 @@
 class Chef < MiniActiveRecord::Model
-  # def self.all
-  #   MiniActiveRecord::Model.execute("SELECT * FROM chefs").map do |row|
-  #     Chef.new(row)
-  #   end
-  # end
+  def self.all
+    MiniActiveRecord::Model.execute("SELECT * FROM chefs").map do |row|
+      Chef.new(row)
+    end
+  end
 
-  # def self.create(attributes)
-  #   record = self.new(attributes)
-  #   record.save
+  def self.create(attributes)
+    record = self.new(attributes)
+    record.save
 
-  #   record
-  # end
+    record
+  end
 
-  # def self.where(query, *args)
-  #   MiniActiveRecord::Model.execute("SELECT * FROM chefs WHERE #{query}", *args).map do |row|
-  #     Chef.new(row)
-  #   end
-  # end
+  def self.where(query, *args)
+    MiniActiveRecord::Model.execute("SELECT * FROM chefs WHERE #{query}", *args).map do |row|
+      Chef.new(row)
+    end
+  end
 
-  # def self.find(pk)
-  #   self.where('id = ?', pk).first
-  # end
+  def self.find(pk)
+    self.where('id = ?', pk).first
+  end
 
   self.attribute_names = [:id, :first_name, :last_name, :email, :phone,
                           :birthday, :created_at, :updated_at]
@@ -75,7 +75,6 @@ class Chef < MiniActiveRecord::Model
   #   @attributes[attribute] = value
   # end
 
-  #__________________________________________
   def meals
     Meal.where('chef_id = ?', self[:id])
   end
@@ -87,7 +86,7 @@ class Chef < MiniActiveRecord::Model
 
     meals
   end
-  #__________________________________________
+
 
   private
 
