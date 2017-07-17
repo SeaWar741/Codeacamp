@@ -82,6 +82,7 @@ class Meal < MiniActiveRecord::Model
   # end
 
 
+
   private
 
   def insert!
