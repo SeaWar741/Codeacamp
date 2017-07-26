@@ -2,16 +2,17 @@ require 'csv'
 
 class Csv_data
 #-------------------
-def initialize(command=gets.chomp)
-	@command = command
-	
-end
+attr_accessor :command
 
 def orders
 	if @command == "index"
 		read_data
 	elsif @command == "add"
-		insert_data
+		puts "Write the desire task"
+		p "hola"
+		gets.chomp
+		task = gets.chomp
+		insert_data(task)
 	elsif @command == "delete"
 		delete
 	elsif @command == "complete"
@@ -30,7 +31,7 @@ end
 
 def insert_data(new_data)
 	CSV.open("tareas.csv") do |csv|
-		csv << [new_data]
+		csv << [new_data.to_s]
 	end
 	puts "Agregaste la tarea: ""#{new_data}"" a tu lista."
 end
@@ -59,6 +60,5 @@ puts '	  complete --> to finish the program'
 
 task = Csv_data.new
 
-#task.orders
-task.read_data
-task.insert_data("hola")
+
+
