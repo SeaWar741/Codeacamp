@@ -1,0 +1,123 @@
+.container {
+  margin: 20px auto;
+  width: 600px;
+  padding: 0px 20px 20px 20px;
+  border: 1px dotted black;
+}
+th {
+  text-align: left;
+}
+
+@charset "utf-8";
+/* CSS Document */
+
+h1{
+  margin: 0 auto;
+  padding-top: 20%;
+  padding-left: 15%;
+  text-transform:uppercase;
+  font-size:30px;
+  color:white;
+}
+
+
+h2{
+  margin: 0 auto;
+  padding-left: 15%;
+  font-size:18px;
+  color:#fff;
+}
+
+
+body {
+  font-family: Helvetica;
+  margin:0 auto;
+  min-height:100%;
+  margin-top: -14%;
+  background: #fff url(http://ns223506.ovh.net/rozne/20c33772316997fa8805bbb75d57d83b/wallpaper-700251.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+
+.nav {
+  
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-left: 15%;
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  border-radius: 5px; 
+  text-align: center;
+  padding-top: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0, .5);
+  
+}
+
+.username {
+  border: 1px solid #a6a6a6;
+  width: 230px;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 25px;
+  padding-left: 9px;
+  color: #6c6c6c;
+  background: #fcfcfc;
+  outline: none;
+}
+
+.password {
+  border: 1px solid #a6a6a6;
+  width: 230px;
+  height: 40px;
+  border-radius: 3px;
+  margin-top: 5px;
+  margin-right: 3px;
+  padding-left: 9px;
+  color: #6c6c6c;
+  background: #fcfcfc;
+  outline: none;
+}
+
+.password:hover, .username:hover {
+  box-shadow: 0 0 10px #00aced;
+  border: 1px #00aced  solid ;
+}
+
+.password:focus, .username:focus, .button:focus, .button:hover:focus{
+  box-shadow: 0 0 10px #00aced; 
+  border: 1px #00aced solid ;
+}
+
+.button {
+  color:#fff;
+  font-size:20px;
+  border: 1px solid #a6a6a6;
+  width: 243px;
+  height: 43px;
+  border-radius: 5px;
+  margin-top: 5px;
+  margin-right: 6px;
+  outline: none;
+  background: #00aced; /* Old browsers */
+  background: #00aced;
+}
+
+  
+.button:hover{
+    background: #3b5998;
+}
+  
+label {
+  position: relative;
+  top: 5px;
+  margin-right: 115px;
+}
+label span {
+  margin-left: 5px;
+  font-size:14px;
+}
+
+  

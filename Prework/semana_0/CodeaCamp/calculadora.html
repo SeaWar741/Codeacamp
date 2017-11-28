@@ -1,0 +1,43 @@
+<html>
+<head>
+    <!-- 
+    Normalize.css makes browsers render all elements more consistently and in line with modern standards. It precisely targets only the styles that need normalizing.
+  -->
+  <link rel="stylesheet" href="normalize.css">
+
+  <!-- Esto especifica que podamos utilizar acentos dentro del HTML  -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <link rel="stylesheet" href="jquery-ui.min.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+  <script src="jquery-ui.min.js"></script>
+  <script src="calculadora.js"></script>
+</head>
+<body>
+  <div class="wideBox">
+    <h1>Drag-and-Drop with jQuery</h1>
+    <h2>Calculadora</h2>
+  </div>
+
+  <div id="content">
+    <div id="cardPile">
+      <ul id="lista">
+        <a href=""><li value="0" id="card">0</li></a>
+        <a href=""><li value="1" id="card">1</li></a>
+        <a href=""><li value="2" id="card">2</li></a>
+        <a href=""><li value="3" id="card">3</li></a>
+        <a href=""><li value="4" id="card">4</li></a>
+        <a href=""><li value="5" id="card">5</li></a>
+        <a href=""><li value="6" id="card">6</li></a>
+        <a href=""><li value="7" id="card">7</li></a>
+        <a href=""><li value="8" id="card">8</li></a>
+        <a href=""><li value="9" id="card">9</li></a>
+      </ul>
+    </div>
+    <div id="cardSlots"></div>
+    <div id="total_sum">0</div>
+  </div>
+</body>
+</html>

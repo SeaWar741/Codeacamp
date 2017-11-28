@@ -1,0 +1,92 @@
+.container {
+  background-color: #b3b7b7;
+  margin: 0 auto;
+  width: 768px;
+}
+
+header {
+  background-color: black;
+}
+
+#logo {
+  display: block;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+a {
+  background-color: #999;
+  color: white;
+  display: block;
+  width: 182px;
+  text-decoration: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.footer {
+  margin-left: 50px;
+  padding: 20px 0;
+}
+#registration{
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  width: 650px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#registration input{
+  font-size: 20px;
+  padding: 5px 5px;
+  border-radius: 3px;
+  border-style: none;
+}
+#registration_name{
+  width: 250px;
+  float: left;
+  margin: 30px 0 0 28px;
+}
+#registration_email{
+  width: 250px;
+  float: right;
+  margin: 30px 28px 0 0;
+}
+#registration_phone {
+  width: 590px;
+  margin: 25px 0px 0 0px ;
+}
+textarea{
+  border-radius: 3px;
+  border-style: none;
+  font-size: 20px;
+  margin: 35px 0 0 0;
+}
+#registration_btn{
+  color: #ffffff;
+  width: 600px;
+  margin: 25px 0px 30px 0px ;
+  background-color: #00c7ff;
+}
+
+
+
+
+
+
+
+

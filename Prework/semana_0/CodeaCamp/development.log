@@ -1,0 +1,724 @@
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:09:05 -0600
+  
+PG::ConnectionBad (FATAL:  no existe el rol «humberto»
+):
+  
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.2ms)
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.6ms)
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:10:10 -0600
+  
+PG::ConnectionBad (FATAL:  no existe la base de datos «all_party_development»
+):
+  
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.0ms)
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /home/humberto/.rbenv/versions/2.4.0/lib/ruby/gems/2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (23.9ms)
+  [1m[35m (238.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "all_party_development"[0m
+  [1m[35m (225.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "all_party_test"[0m
+  [1m[35m (1334.4ms)[0m  [1m[35mCREATE DATABASE "all_party_development" ENCODING = 'unicode'[0m
+  [1m[35m (1089.2ms)[0m  [1m[35mCREATE DATABASE "all_party_test" ENCODING = 'unicode'[0m
+  [1m[35m (483.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (114.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7666817453352840720);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20170314190007)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (91.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "name" character varying, "email" character varying, "password_digest" character varying, "remember_digest" character varying, "activated" boolean, "activation_digest" boolean, "activated_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314190007"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReservations (20170314190142)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (119.7ms)[0m  [1m[35mCREATE TABLE "reservations" ("id" serial primary key, "user_id" integer, "total" float, "name" character varying, "address" character varying, "date" date, "time" character varying, "phone" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (28.7ms)[0m  [1m[35mCREATE  INDEX  "index_reservations_on_user_id" ON "reservations"  ("user_id")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314190142"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateProducts (20170314190345)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (98.4ms)[0m  [1m[35mCREATE TABLE "products" ("id" serial primary key, "name" character varying, "amount" float, "unit_type" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314190345"]]
+  [1m[35m (9.1ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateReservationProducts (20170314190441)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (43.3ms)[0m  [1m[35mCREATE TABLE "reservation_products" ("id" serial primary key, "reservation_id" integer, "product_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (30.3ms)[0m  [1m[35mCREATE  INDEX  "index_reservation_products_on_reservation_id" ON "reservation_products"  ("reservation_id")[0m
+  [1m[35m (30.8ms)[0m  [1m[35mCREATE  INDEX  "index_reservation_products_on_product_id" ON "reservation_products"  ("product_id")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314190441"]]
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIndexToUsersEmail (20170314234134)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170314234134"]]
+  [1m[35m (18.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddResetToUsers (20170315014503)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_digest" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_sent_at" timestamp[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170315014503"]]
+  [1m[35m (7.6ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddOmniauthToUsers (20170316235446)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "provider" character varying[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "uid" character varying[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170316235446"]]
+  [1m[35m (7.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddDeviseToUsers (20170317195330)
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (137.2ms)[0m  [1m[35mALTER TABLE "users" ADD "encrypted_password" character varying DEFAULT '' NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_token" character varying[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "reset_password_sent_at" timestamp[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_created_at" timestamp[0m
+  [1m[35m (151.3ms)[0m  [1m[35mALTER TABLE "users" ADD "sign_in_count" integer DEFAULT 0 NOT NULL[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_at" timestamp[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_at" timestamp[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "current_sign_in_ip" inet[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "users" ADD "last_sign_in_ip" inet[0m
+  [1m[35m (47.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20170317195330"]]
+  [1m[35m (18.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-03-20 17:17:10 UTC], ["updated_at", 2017-03-20 17:17:10 UTC]]
+  [1m[35m (8.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7666817453352840720)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:19:58 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5235.8ms)
+Completed 200 OK in 5361ms (Views: 5333.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:20:20 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (180.8ms)
+Completed 200 OK in 327ms (Views: 316.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 11:20:38 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XfF0G55HdWgPuPIxmTpH9MMaG6Y+r3s/lDXHPUfB8ZmzeAwVnI1Lx1heAefY9k+umsiURBH00CKatx6kiYmMYw==", "package"=>{"persons"=>"4", "glass_person"=>"6", "size"=>"small", "meat"=>"sirloin"}, "commit"=>"Comprar Paquete"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-20 11:20:38 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (69.8ms)
+Completed 200 OK in 170ms (Views: 168.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:20:47 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 61ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:21:14 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 61ms (Views: 59.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:21:16 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:21:19 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 11:21:21 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qQRJ1R+T0FDLRGyhrPZFvrA29PhkUlnGlvXztpX4rqRHjTHbHVnu/5yin3ftOk3k6eR7GksJ8tuYdyovW7DTXg==", "package"=>{"persons"=>"", "glass_person"=>"", "size"=>"small", "meat"=>"sirloin"}, "commit"=>"Comprar Paquete"}
+Redirected to http://localhost:3000/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-20 11:21:21 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 51ms (Views: 50.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:21:23 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 45ms (Views: 44.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2017-03-20 11:32:33 -0600
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 77ms (Views: 45.5ms | ActiveRecord: 5.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2017-03-20 11:32:44 -0600
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0fmJExV1bg6Htn42a4Omv6mTTwUbODmfGIVUedl7qSl8USzYv9O5ns/EeOHBCDK6gf41qRs48dRfdxgqeVUA5Q==", "user"=>{"name"=>"humberto", "email"=>"huarci@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Crear mi cuenta"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "huarci@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "password_digest", "activation_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["name", "humberto"], ["email", "huarci@gmail.com"], ["password_digest", "$2a$10$yf4DPMiw6vOxF/QJTfJF/e04THV/znOh/rceIZtAZjZXBf8cKWfkq"], ["activation_digest", true], ["created_at", 2017-03-20 17:32:44 UTC], ["updated_at", 2017-03-20 17:32:44 UTC]]
+  [1m[35m (19.1ms)[0m  [1m[35mCOMMIT[0m
+  Rendering user_mailer/account_activation.html.erb within layouts/mailer
+  Rendered user_mailer/account_activation.html.erb within layouts/mailer (0.6ms)
+  Rendering user_mailer/account_activation.text.erb within layouts/mailer
+  Rendered user_mailer/account_activation.text.erb within layouts/mailer (0.5ms)
+UserMailer#account_activation: processed outbound mail in 181.1ms
+Sent mail to huarci@gmail.com (6.7ms)
+Date: Mon, 20 Mar 2017 11:32:45 -0600
+From: noreply@todoparatufiesta.mx
+To: huarci@gmail.com
+Message-ID: <58d0123d4e1f0_40892ae7f2b7a75072375@humberto-G74Sx.mail>
+Subject: =?UTF-8?Q?Activaci=C3=B3n_De_Cuenta?=
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_58d0123d4ce61_40892ae7f2b7a750722e2";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_58d0123d4ce61_40892ae7f2b7a750722e2
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hola humberto
+Bienvenido a "Todo para Tu Fiesta App!, haz click en el link de abajo para activar tu cuenta:
+
+https://localhost:3000/account_activations/UKborH5Bmqj5_8Es4MBcHQ/edit?email=huarci%40gmail.com
+
+
+----==_mimepart_58d0123d4ce61_40892ae7f2b7a750722e2
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <h1>Todo para tu Fiesta</h1>
+
+<p>hi humberto, </p>
+
+<p>
+ Bienvenido a "Todo para Tu Fiesta App!, haz click en el link de abajo para activar tu cuenta:
+</p>
+
+<a href="https://localhost:3000/account_activations/UKborH5Bmqj5_8Es4MBcHQ/edit?email=huarci%40gmail.com">Activate</a>
+
+  </body>
+</html>
+
+----==_mimepart_58d0123d4ce61_40892ae7f2b7a750722e2--
+
+Redirected to http://localhost:3000/
+Completed 302 Found in 1032ms (ActiveRecord: 22.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:32:45 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 42ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/account_activations/UKborH5Bmqj5_8Es4MBcHQ/edit?email=huarci%40gmail.com" for 127.0.0.1 at 2017-03-20 11:32:58 -0600
+Processing by AccountActivationsController#edit as HTML
+  Parameters: {"email"=>"huarci@gmail.com", "id"=>"UKborH5Bmqj5_8Es4MBcHQ"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "huarci@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "users" SET "activated" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated", true], ["updated_at", 2017-03-20 17:32:58 UTC], ["id", 1]]
+  [1m[35m (33.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "users" SET "activated_at" = $1, "updated_at" = $2 WHERE "users"."id" = $3[0m  [["activated_at", 2017-03-20 17:32:58 UTC], ["updated_at", 2017-03-20 17:32:58 UTC], ["id", 1]]
+  [1m[35m (60.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 159ms (ActiveRecord: 100.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 11:32:58 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 11:33:02 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (7.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 47.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 11:33:11 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"m1Fudj1akLPGU43BAowsGmK+SfSOPDTnUE4RQWzIarV12BZ4P5CuHJG1fhdDQCRAO2zGFqFnn/pezMjYooAXTw==", "package"=>{"persons"=>"12", "glass_person"=>"6", "size"=>"small", "meat"=>"sirloin"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/tickets?glass_person=6&meat=sirloin&persons=12&size=small
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:33:11 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 48.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:42:05 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 55ms (Views: 52.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:44:08 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:44:46 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 58.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:45:01 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:56:10 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (22.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 64ms (Views: 62.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:56:42 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:57:45 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:58:29 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 40.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:58:44 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.3ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:58:55 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:59:08 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 11:59:25 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 49ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 12:00:53 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (17.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 12:06:46 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=12&size=small" for 127.0.0.1 at 2017-03-20 12:07:40 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"12", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 39ms (Views: 37.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 16:57:15 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (29.0ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (396.9ms)
+Completed 200 OK in 542ms (Views: 497.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 16:57:23 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (175.4ms)
+Completed 200 OK in 436ms (Views: 404.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2017-03-20 16:57:25 -0600
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 68ms (Views: 55.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2017-03-20 16:57:39 -0600
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+JBShEzBYVNcfvxM9/zUdt6KRjFeDnlPWhyAmd4ueyVes12SYmIsqnHOA9dXFVqPhG/2VLMS60wDGrkfN2EMJQ==", "session"=>{"email"=>"huarci@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (130.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "huarci@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 452ms (ActiveRecord: 232.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 16:57:40 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 16:57:45 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (7.4ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 113ms (Views: 107.5ms | ActiveRecord: 4.4ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 16:57:59 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oL0cqjFhkU75OHfWM/9eKED/4q0tQyoCt8rBwmfuc2y094VyGdyBXHIC2kHyxPZhvyiAi1WkfoxqX97C0B4Hiw==", "package"=>{"persons"=>"10", "glass_person"=>"6", "size"=>"small", "meat"=>"sirloin"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from create at /home/humberto/Escritorio/all_party/app/controllers/packages_controller.rb:9)
+Redirected to http://localhost:3000/tickets?glass_person=6&meat=sirloin&persons=10&size=small
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?glass_person=6&meat=sirloin&persons=10&size=small" for 127.0.0.1 at 2017-03-20 16:57:59 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"6", "meat"=>"sirloin", "persons"=>"10", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (81.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 132ms (Views: 130.3ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 17:02:17 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29Ej94UW22tJgnwzF01tSlbyGcUfjtqB9evBkYzKyR35oX2a64mFanJfS+eo/nWS+04UgiUEU/eBvT0qY5K/Hg==", "package"=>{"name"=>"Humberto Arryoyo", "address"=>"mexico cty", "date"=>"2017-03-25", "time"=>"20:00", "phone"=>"5525312936"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from create at /home/humberto/Escritorio/all_party/app/controllers/packages_controller.rb:9)
+Redirected to http://localhost:3000/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00
+Completed 302 Found in 34ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00" for 127.0.0.1 at 2017-03-20 17:02:17 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"address"=>"mexico cty", "date"=>"2017-03-25", "name"=>"Humberto Arryoyo", "phone"=>"5525312936", "time"=>"20:00"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 43ms (Views: 41.9ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 17:04:12 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29Ej94UW22tJgnwzF01tSlbyGcUfjtqB9evBkYzKyR35oX2a64mFanJfS+eo/nWS+04UgiUEU/eBvT0qY5K/Hg==", "package"=>{"name"=>"Humberto Arryoyo", "address"=>"mexico cty", "date"=>"2017-03-25", "time"=>"20:00", "phone"=>"5525312936"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from create at /home/humberto/Escritorio/all_party/app/controllers/packages_controller.rb:9)
+Redirected to http://localhost:3000/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00
+Completed 302 Found in 38ms (ActiveRecord: 4.3ms)
+
+
+Started GET "/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00" for 127.0.0.1 at 2017-03-20 17:04:12 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"address"=>"mexico cty", "date"=>"2017-03-25", "name"=>"Humberto Arryoyo", "phone"=>"5525312936", "time"=>"20:00"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 17:05:02 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"29Ej94UW22tJgnwzF01tSlbyGcUfjtqB9evBkYzKyR35oX2a64mFanJfS+eo/nWS+04UgiUEU/eBvT0qY5K/Hg==", "package"=>{"name"=>"Humberto Arryoyo", "address"=>"mexico cty", "date"=>"2017-03-25", "time"=>"20:00", "phone"=>"5525312936"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from create at /home/humberto/Escritorio/all_party/app/controllers/packages_controller.rb:9)
+Redirected to http://localhost:3000/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/tickets?address=mexico+cty&date=2017-03-25&name=Humberto+Arryoyo&phone=5525312936&time=20%3A00" for 127.0.0.1 at 2017-03-20 17:05:02 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"address"=>"mexico cty", "date"=>"2017-03-25", "name"=>"Humberto Arryoyo", "phone"=>"5525312936", "time"=>"20:00"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 17:05:46 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (12.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 53ms (Views: 51.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 17:05:57 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (10.2ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 67ms (Views: 65.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 17:05:58 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (8.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 17:06:01 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (6.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/packages" for 127.0.0.1 at 2017-03-20 17:12:17 -0600
+Processing by PackagesController#index as HTML
+  Rendering packages/index.html.erb within layouts/application
+  Rendered packages/index.html.erb within layouts/application (4.4ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 42ms (Views: 40.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/packages" for 127.0.0.1 at 2017-03-20 17:12:21 -0600
+Processing by PackagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fc3kwkobTeVHxn/DOh8kiXNIpU5T4VGxp9cWjjSRvFhfvbqvJIQT5HwbSBeFrDxR3vSoCWlr2MfTgeo128nKWw==", "package"=>{"persons"=>"", "glass_person"=>"", "size"=>"small", "meat"=>"sirloin"}, "commit"=>"Comprar Paquete"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+DEPRECATION WARNING: Method to_hash is deprecated and will be removed in Rails 5.1, as `ActionController::Parameters` no longer inherits from hash. Using this deprecated behavior exposes potential security problems. If you continue to use this method you may be creating a security vulnerability in your app that can be exploited. Instead, consider using one of these documented methods which are not deprecated: http://api.rubyonrails.org/v5.0.2/classes/ActionController/Parameters.html (called from create at /home/humberto/Escritorio/all_party/app/controllers/packages_controller.rb:9)
+Redirected to http://localhost:3000/tickets?glass_person=&meat=sirloin&persons=&size=small
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/tickets?glass_person=&meat=sirloin&persons=&size=small" for 127.0.0.1 at 2017-03-20 17:12:21 -0600
+Processing by TicketsController#index as HTML
+  Parameters: {"glass_person"=>"", "meat"=>"sirloin", "persons"=>"", "size"=>"small"}
+  Rendering tickets/index.html.erb within layouts/application
+  Rendered tickets/index.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 51ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-03-20 17:16:44 -0600
+Processing by PartysController#index as HTML
+  Rendering partys/index.html.erb within layouts/application
+  Rendered partys/index.html.erb within layouts/application (5.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.3ms)
+
+
