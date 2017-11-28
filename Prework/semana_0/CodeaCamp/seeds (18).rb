@@ -1,5 +1,0 @@
-user_1 = User.create(user_name: "humberto", email: "humberto@gmail.com", password: "humberto")
-history_1 = History.create(user_id: user_1.id)
-quiz_1 = Quiz.create(history_id: history_1.id, name: "quiz")
-question_1 = Question.create(quz_id: quiz_1.idiz_id: quiz_1.id,  text: "¿Cuántas veces al día comes?")
-answer_1 = Answer.create(qui, question_id: question_1.id, text: "33333")
